@@ -1,0 +1,78 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Header styles */
+  h1 {
+    text-align: center;
+    color: #007bff;
+  }
+  
+  /* Quote container styles */
+  #quote {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Paragraph styles */
+  p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  /* Result comparison styles */
+  #comparisonResult {
+    font-weight: bold;
+  }
+  
+  .gain {
+    color: green;
+  }
+  
+  .loss {
+    color: red;
+  }
+  
+  .breakeven {
+    color: orange;
+  }
+  
+  /* Money change styles */
+  .money-gain {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .money-loss {
+    color: red;
+    font-weight: bold;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+  
+    #quote {
+        width: 90%;
+    }
+  
+    h1 {
+        font-size: 24px;
+    }
+  
+    p {
+        font-size: 16px;
+    }
+  }
+  
