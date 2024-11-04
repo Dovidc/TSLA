@@ -1,5 +1,5 @@
 // Hardcoded purchase price for AAPL
-const hardcodedPurchasePrice = 150.00; // Set your hardcoded purchase price here
+const hardcodedPurchasePrice = 256.67; // Set your hardcoded purchase price here
 const apiKey = 'YEplLiGiXF8MqQIrdUiJUrDbYIwn0kakb'; // Replace with your actual API key
 const url = `https://financialmodelingprep.com/api/v3/quote-short/TSLA?apikey=EplLiGiXF8MqQIrdUiJUrDbYIwn0kakb`;
 
