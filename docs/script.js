@@ -37,22 +37,22 @@ function displayQuote(data) {
         const percentageChange = (gainLoss / hardcodedPurchasePrice) * 100;
 
         // Set the text and color based on gain or loss
-        if (gainLoss > 0) {
-            comparisonResultElement.textContent = 'You are in a positive position.';
-            comparisonResultElement.className = 'gain';
-            moneyChangeElement.textContent = `You made: $${gainLoss.toFixed(2)}`;
-            moneyChangeElement.className = 'money-gain';
-        } else if (gainLoss < 0) {
-            comparisonResultElement.textContent = 'You are in a negative position.';
-            comparisonResultElement.className = 'loss';
-            moneyChangeElement.textContent = `You lost: $${Math.abs(gainLoss).toFixed(2)}`;
-            moneyChangeElement.className = 'money-loss';
-        } else {
-            comparisonResultElement.textContent = 'You are at breakeven.';
-            comparisonResultElement.className = 'breakeven';
-            moneyChangeElement.textContent = `You broke even.`;
-            moneyChangeElement.className = '';
-        }
+       if (gainLoss > 0) {
+    comparisonResultElement.textContent = 'You are in a positive position.';
+    comparisonResultElement.className = 'gain';
+    moneyChangeElement.textContent = `You made: $${(gainLoss * 3).toFixed(2)}`; // Show 3 times the gain
+    moneyChangeElement.className = 'money-gain';
+} else if (gainLoss < 0) {
+    comparisonResultElement.textContent = 'You are in a negative position.';
+    comparisonResultElement.className = 'loss';
+    moneyChangeElement.textContent = `You lost: $${Math.abs(gainLoss * 3).toFixed(2)}`; // Show 3 times the loss
+    moneyChangeElement.className = 'money-loss';
+} else {
+    comparisonResultElement.textContent = 'You are at breakeven.';
+    comparisonResultElement.className = 'breakeven';
+    moneyChangeElement.textContent = `You broke even.`;
+    moneyChangeElement.className = '';
+}
 
         percentageChangeElement.textContent = `Percentage Change: ${percentageChange.toFixed(2)}%`;
     } else {
